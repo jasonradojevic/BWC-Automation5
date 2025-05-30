@@ -1,0 +1,7 @@
+services:
+  - type: web
+    name: chainsync
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python app/chainsync_app.py
